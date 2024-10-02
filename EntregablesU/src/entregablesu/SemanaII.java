@@ -4,12 +4,16 @@
  */
 package entregablesu;
 
+<<<<<<< HEAD
 import javax.swing.JOptionPane;
 
+=======
+>>>>>>> 6fd76be64f3f8b94f810c8e645f9d53d4491324c
 /**
  *
  * @author hande
  */
+<<<<<<< HEAD
 public class SemanaII {
 
     public static void main(String[] args) {
@@ -129,4 +133,8 @@ public class SemanaII {
 
     }
 
+=======
+public class EngrablesII {
+    
+>>>>>>> 6fd76be64f3f8b94f810c8e645f9d53d4491324c
 }
