@@ -72,13 +72,13 @@ Salario bruto: #####.##
 Deducciones: #####.##
 Salario Neto: #####.##
 */
-String trabajador;
-String salarioSemanal;
-String iMessage;
-String strDeducciones;
-double salarioFinal;
-double deducciones;
-double salarioNeto;
+String trabajador="";
+String salarioSemanal ="";
+String iMessage ="";
+String strDeducciones ="";
+double salarioFinal =0;
+double deducciones =0;
+double salarioNeto =0;
 
 trabajador = JOptionPane.showInputDialog("Cual es su nombre?");
 System.out.println(trabajador);
@@ -87,7 +87,7 @@ salarioFinal = Double.parseDouble(salarioSemanal);
 salarioFinal = salarioFinal * 4; 
 strDeducciones = JOptionPane.showInputDialog("Cuanto deducciones recibir?");
 deducciones = Double.parseDouble(strDeducciones);
-salarioNeto = salarioFinal-deducciones;
+salarioNeto = salarioFinal- (salarioFinal * deducciones)/100;
 
 iMessage = MessageFormat.format("Estimado {0}, el salario de este mes se desglosa", trabajador);
 System.out.println(iMessage);
